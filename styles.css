@@ -1,0 +1,770 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #1abc9c;
+}
+
+/* Main App Content (Note Writing Page) */
+#app {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map-container {
+  position: relative;
+  width: 90%;
+  height: 50vh;
+  border: 2px solid #1abc9c;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#map-watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#search-container {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+#search-box {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #16a085;
+}
+
+#note-container {
+  margin: 20px 0;
+  width: 90%;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+#note-container h2 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#note-input {
+  width: calc(100% - 20px);
+  height: 100px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  resize: none;
+  background-color: white;
+  color: #333;
+}
+
+#save-note-button {
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#save-note-button:hover {
+  background-color: #34495e;
+}
+
+#saved-notes {
+  width: 90%;
+}
+
+#saved-notes h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+#notes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#notes-list li {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Page Styles */
+#home-content {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#home-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#home-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+#home-content a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+#home-content a:hover {
+  text-decoration: underline;
+}
+
+/* About Us Page Styles */
+#about-content {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+#about-content a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+#about-content a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Page Styles */
+#contact-content {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#contact-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #16a085;
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #2c3e50;
+  color: white;
+}
+
+footer a {
+  color: #1abc9c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #16a085;
+}
+/* Home Page Specific Styles */
+#hero {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #34495e;
+}
+
+#features {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+#testimonials {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .author {
+  font-size: 14px;
+  color: #1abc9c;
+  font-weight: 600;
+}
+
+#cta {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: white;
+  text-align: center;
+}
+
+#cta h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+/* About Us Page Specific Styles */
+#about-hero {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#about-hero h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#about-hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#our-mission {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+#our-mission h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#our-mission p {
+  font-size: 16px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#team {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#team h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+#about-cta {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: white;
+  text-align: center;
+}
+
+#about-cta h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#about-cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+/* Notes Page Specific Styles */
+#map-container {
+  position: relative;
+  width: 90%;
+  height: 50vh;
+  border: 2px solid #1abc9c;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#map-watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#map-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#map-controls button {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#map-controls button:hover {
+  background-color: #f4f4f4;
+}
+
+#search-container {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+#search-box {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #16a085;
+}
+
+#location-details {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#location-details h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+#location-details p {
+  font-size: 16px;
+  color: #333;
+}
+
+#note-container {
+  margin: 20px 0;
+  width: 90%;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+#note-container h2 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#formatting-tools {
+  margin-bottom: 10px;
+}
+
+#formatting-tools button {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#formatting-tools button:hover {
+  background-color: #f4f4f4;
+}
+
+#note-input {
+  width: calc(100% - 20px);
+  height: 150px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  resize: none;
+  background-color: white;
+  color: #333;
+}
+
+#note-category {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#save-note-button {
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#save-note-button:hover {
+  background-color: #34495e;
+}
+
+#save-confirmation {
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#save-confirmation.hidden {
+  opacity: 0;
+}
+
+#save-confirmation.visible {
+  opacity: 1;
+}
+
+#saved-notes {
+  width: 90%;
+}
+
+#saved-notes h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+#notes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#notes-list li {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 10px;
+}
